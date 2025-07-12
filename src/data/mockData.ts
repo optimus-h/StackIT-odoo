@@ -3,8 +3,8 @@ import { User, Question, Answer, Notification, Tag } from '../types';
 export const mockUsers: User[] = [
   {
     id: '1',
-    username: 'Nicolas',
-    email: 'nicolas@example.com',
+    username: 'Mayur',
+    email: 'mayur@example.com',
     avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1',
     role: 'user',
     reputation: 1250,
@@ -21,7 +21,7 @@ export const mockUsers: User[] = [
   },
   {
     id: '3',
-    username: 'mike_coder',
+    username: 'mike_coderr',
     email: 'mike@example.com',
     avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1',
     role: 'user',
