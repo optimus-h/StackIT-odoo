@@ -10,3 +10,6 @@ Develop a minimal question-and-answer platform that supports collaborative learn
 | Harsh Joshi | 24dce049@charusat.edu.in         |
 | Nandan Vakani | 24dit074@charusat.edu.in          |
 
+
+
+Vide link: https://drive.google.com/file/d/1eNBhpqQUArlGliQl3RTsihh23KKeHCca/view?usp=sharing
