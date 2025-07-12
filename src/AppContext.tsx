@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { User, Question, Answer, Notification, Tag } from '../types';
 import { mockUsers, mockQuestions, mockAnswers, mockNotifications, mockTags } from '../data/mockData';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 interface AppContextType {
@@ -48,13 +49,36 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
 
+// other imports
 
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/login" element={<Login />} />
+//         <Route path="/" element={<HomePage />} />
+//         {/* other routes */}
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+
+// export default App;
+  const login = (username: string, password: string): boolean => {
+    const user = mockUsers.find(u => u.username === username);
+    if (user) {
+      setCurrentUser(user);
+      setIsLoggedIn(true);
+      return true;
+    }
+    return false;
+  };
 
   const logout = () => {
     setCurrentUser(null);
     setIsLoggedIn(false);
   };
-
   const addQuestion = (questionData: Omit<Question, 'id' | 'createdAt' | 'updatedAt'>) => {
     const newQuestion: Question = {
       ...questionData,
