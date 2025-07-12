@@ -42,8 +42,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     switch (type) {
       case 'votes':
         return <TrendingUp className="w-4 h-4" />;
-      case 'activity':
-        return <Award className="w-4 h-4" />;
+      
       case 'newest':
       default:
         return <Clock className="w-4 h-4" />;
@@ -83,7 +82,6 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {[
             { key: 'newest', label: 'Newest' },
             { key: 'votes', label: 'Votes' },
-            { key: 'activity', label: 'Activity' }
           ].map(option => (
             <button
               key={option.key}
