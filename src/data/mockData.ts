@@ -3,7 +3,7 @@ import { User, Question, Answer, Notification, Tag } from '../types';
 export const mockUsers: User[] = [
   {
     id: '1',
-    username: 'Nic',
+    username: 'Nicolas',
     email: 'nicolas@example.com',
     avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1',
     role: 'user',
