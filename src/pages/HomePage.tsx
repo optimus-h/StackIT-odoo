@@ -30,8 +30,8 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     switch (sortBy) {
       case 'votes':
         return b.votes - a.votes;
-      // case 'activity':
-      //   return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
+      case 'activity':
+        return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
       case 'newest':
       default:
         return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
@@ -83,7 +83,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {[
             { key: 'newest', label: 'Newest' },
             { key: 'votes', label: 'Votes' },
-            // { key: 'activity', label: 'Activity' }
+            { key: 'activity', label: 'Activity' }
           ].map(option => (
             <button
               key={option.key}
