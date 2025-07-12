@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Filter, TrendingUp, Clock, Award } from 'lucide-react';
+import { Filter, TrendingUp, Clock} from 'lucide-react';
 import QuestionCard from '../components/QuestionCard';
 import { useApp } from '../context/AppContext';
 
