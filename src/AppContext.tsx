@@ -2,8 +2,8 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { User, Question, Answer, Notification, Tag } from '../types';
 import { mockUsers, mockQuestions, mockAnswers, mockNotifications, mockTags } from '../data/mockData';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './components/Login';
-import HomePage from './pages/HomePage'; // your main home/dashboard page
+import Login from '../components/login';
+import HomePage from '../pages/HomePage'; // your main home/dashboard page
 
 interface AppContextType {
   currentUser: User | null;
